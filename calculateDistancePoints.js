@@ -1,17 +1,17 @@
 const roundDistance = (distance) => {
-    const x = Math.round(distance);
-    if ((x - Math.floor(x)) <= 0.3) {
-        return Math.floor(x);
-    } else if ((x - Math.floor(x)) >= 0.7) {
-        return Math.ceil(x);
+    if ((distance - Math.floor(distance)) <= 0.3) {
+        return Math.floor(distance);
+    } else if ((distance - Math.floor(distance)) >= 0.7) {
+        return Math.ceil(distance);
     } else {
-        return Math.floor(x) + 0.5;
+        return (Math.floor(distance) + 0.5);
     }
 };
 
 
 const calculateDistancePoints = (distance, hillSize, kPoint) => {
     const finalDistance = roundDistance(distance);
+    console.log(finalDistance);
     let basicPoints;
     let hillCoefficient;
 
@@ -34,6 +34,7 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
 
     let bonusPoints = Math.abs(kPoint - finalDistance) * hillCoefficient;
     let points;
+
     if (finalDistance > kPoint) {
         points = basicPoints + bonusPoints;
     } else {
