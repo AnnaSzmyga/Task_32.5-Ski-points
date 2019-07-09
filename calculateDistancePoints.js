@@ -11,9 +11,9 @@ const roundDistance = (distance) => {
 
 const calculateDistancePoints = (distance, hillSize, kPoint) => {
     const finalDistance = roundDistance(distance);
-    console.log(finalDistance);
-    let basicPoints;
-    let hillCoefficient;
+
+    let basicPoints = 0;
+    let hillCoefficient = 0;
 
     switch(hillSize) {
         case "normal":

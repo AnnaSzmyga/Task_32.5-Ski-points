@@ -1,3 +1,4 @@
 const calculateTotalPoints = require('./calculateTotalPoints');
 
-console.log(calculateTotalPoints(100.7, "normal", 80, [8, 10, 10, 10, 10], 5, 10));
+const exampleResult = calculateTotalPoints(227.5, "ski flying", 200, [18.0, 18.5, 17.5, 18.5, 18.5], 8.7, -8.4);
+console.log(exampleResult);
