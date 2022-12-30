@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Handzia/Task_32.5-Ski-points#readme",
   "devDependencies": {
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "onchange": "^6.0.0"
   }
 }
